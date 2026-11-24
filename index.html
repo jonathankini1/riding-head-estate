@@ -161,6 +161,13 @@ dd{margin:0;color:#fff}
 .contact h3{font-size:clamp(32px,3.6vw,46px);color:#fff;margin-bottom:16px}
 .contact a.mail{font-family:var(--serif);font-size:clamp(22px,2.4vw,30px);color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(201,162,94,.5);word-break:break-word}
 .contact .btn{margin-top:28px}
+.contact .who{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.7);margin:22px 0 4px}
+.contact a.mail{display:inline-block;font-size:clamp(19px,2vw,25px)}
+.plans{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,4vw,56px);margin-top:64px;align-items:start}
+.plans figure{margin:0;background:var(--paper);border:1px solid var(--line);padding:18px}
+.plans img{width:100%;height:auto}
+.dl{display:inline-block;margin-top:22px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--amber);padding-bottom:4px}
+@media (max-width:980px){.plans{grid-template-columns:1fr}}
 
 footer{background:#0c120f;color:rgba(255,255,255,.55);font-size:12.5px;line-height:1.6;padding:44px 0 56px}
 footer p{max-width:78em}
@@ -326,6 +333,20 @@ footer b{color:rgba(255,255,255,.8);font-weight:500}
         </div>
       </div>
     </div>
+    <div class="plans" id="plans">
+      <figure class="rv">
+        <img src="assets/site-layout.svg" alt="Indicative site layout showing the main building, south wing, patios, 35 parking bays and Riding Head Lane" loading="lazy">
+        <figcaption>Site layout. Indicative only, drawn for this website and not to scale.</figcaption>
+      </figure>
+      <div class="rv">
+        <figure>
+          <img src="assets/floors.svg" alt="Diagram of the eighteen apartments by floor, sized by floor area" loading="lazy">
+          <figcaption>The eighteen apartments by floor.</figcaption>
+        </figure>
+        <p class="cap" style="margin-top:16px">The architect's planning drawings, with full floor plans, are in the information pack.</p>
+        <a class="dl" href="assets/Fishermans-Retreat-Brochure.pdf" download>Download the brochure (PDF)</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -429,15 +450,19 @@ footer b{color:rgba(255,255,255,.8);font-weight:500}
         <div><dt>Planning</dt><dd id="planning-dd">Planning permission granted by Rossendale Borough Council (application 2025/0148) for eighteen apartments with 35 parking bays. The planning committee voted for it unanimously on 3 March 2026.</dd></div>
         <div><dt>Wider estate</dt><dd>Additional land and water in the family's ownership is available by separate negotiation.</dd></div>
         <div><dt>Method</dt><dd>Private treaty. The family can exchange and complete quickly with a cash buyer.</dd></div>
+        <div><dt>Offers</dt><dd>Offers are welcome at any time. Please send them in writing with proof of funds, any conditions and your timescale to exchange and complete.</dd></div>
         <div><dt>Viewing</dt><dd>Strictly by appointment.</dd></div>
       </dl>
     </div>
     <div class="contact rv" id="enquire">
       <p class="eyebrow">Enquiries in confidence</p>
       <h3>Ask for the information pack or book a viewing.</h3>
-      <p>The pack has the planning drawings, the decision notice and the title information. To get it, email Jonathan Kini.</p>
+      <p>The pack has the planning drawings, the decision notice and the title information. To get it, email Jonathan or James.</p>
+      <p class="who">Jonathan Kini</p>
       <a class="mail" href="mailto:jonathan.kini@sjkconsulting.co.uk?subject=The%20Fisherman%27s%20Retreat%20Estate%20%E2%80%93%20private%20enquiry">jonathan.kini@sjkconsulting.co.uk</a>
-      <div><a class="btn" href="mailto:jonathan.kini@sjkconsulting.co.uk?subject=The%20Fisherman%27s%20Retreat%20Estate%20%E2%80%93%20private%20enquiry&amp;body=Please%20send%20the%20information%20pack%20for%20The%20Fisherman%27s%20Retreat%20Estate.%0A%0AName%3A%0ATelephone%3A%0A">Email Jonathan</a></div>
+      <p class="who">James, for the family</p>
+      <a class="mail" href="mailto:james@fishermansretreat.com?subject=The%20Fisherman%27s%20Retreat%20Estate%20%E2%80%93%20private%20enquiry">james@fishermansretreat.com</a>
+      <div><a class="btn" href="mailto:jonathan.kini@sjkconsulting.co.uk?cc=james@fishermansretreat.com&amp;subject=The%20Fisherman%27s%20Retreat%20Estate%20%E2%80%93%20private%20enquiry&amp;body=Please%20send%20the%20information%20pack%20for%20The%20Fisherman%27s%20Retreat%20Estate.%0A%0AName%3A%0ATelephone%3A%0A">Email us both</a></div>
     </div>
   </div>
 </section>

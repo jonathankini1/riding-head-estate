@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 20 1500 1330" font-family="Helvetica, Arial, sans-serif">
+  <title>Indicative site layout, The Fisherman's Retreat</title>
+  <rect x="60" y="20" width="1500" height="1330" fill="#e7ecdc"/>
+
+  <!-- lanes -->
+  <g fill="none" stroke="#fbf9f4" stroke-width="58" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 20 C150 120 95 230 125 360 C160 470 250 600 330 730 L560 1090 L760 1350"/>
+    <path d="M1235 1350 C1300 1200 1345 1050 1350 900 L1352 640 C1352 560 1362 520 1385 480"/>
+    <path d="M1385 480 L1180 540 L1010 560 L900 480"/>
+    <path d="M900 480 L880 300 L700 250 L330 120"/>
+  </g>
+  <path d="M900 395 L1420 395 L1385 500 L1015 560 L880 520 Z" fill="#fbf9f4"/>
+
+  <!-- brook -->
+  <path d="M795 668 L955 612 L1000 640 L985 656 L955 636 L800 690 Z" fill="#a9c9d9"/>
+  <path d="M60 545 L210 705 L196 716 L60 590 Z" fill="#a9c9d9"/>
+
+  <!-- trees -->
+  <g fill="#b7cba3" opacity=".9">
+    <circle cx="205" cy="330" r="46"/><circle cx="235" cy="420" r="44"/><circle cx="270" cy="505" r="40"/><circle cx="180" cy="270" r="30"/>
+    <circle cx="800" cy="95" r="52"/><circle cx="870" cy="140" r="44"/><circle cx="740" cy="70" r="36"/>
+    <circle cx="960" cy="318" r="40"/><circle cx="1040" cy="322" r="44"/><circle cx="1130" cy="318" r="46"/><circle cx="1220" cy="320" r="46"/><circle cx="1300" cy="326" r="40"/>
+    <circle cx="1010" cy="715" r="46"/><circle cx="1180" cy="550" r="40"/><circle cx="1245" cy="545" r="30"/>
+    <circle cx="1460" cy="570" r="44"/><circle cx="1535" cy="585" r="36"/>
+    <circle cx="440" cy="1050" r="32"/><circle cx="560" cy="1215" r="30"/><circle cx="620" cy="1300" r="30"/>
+  </g>
+
+  <!-- parking -->
+  <g fill="#f6f1e6" stroke="#8d8672" stroke-width="2">
+    <path d="M950 378 L1345 386 L1345 438 L950 430 Z"/>
+    <path d="M1178 655 L1250 660 L1202 1026 L1128 1020 Z"/>
+    <path d="M392 700 L440 672 L610 915 L560 945 Z"/>
+    <path d="M815 520 L875 505 L892 562 L832 578 Z"/>
+  </g>
+  <g stroke="#8d8672" stroke-width="1.5">
+    <path d="M978 379v52M1006 379v52M1034 380v52M1062 380v52M1090 381v52M1118 381v52M1146 382v52M1174 383v52M1202 383v52M1230 384v52M1258 384v52M1286 385v52M1314 385v52"/>
+    <path d="M1174 688h72M1169 721h73M1165 754h72M1161 787h72M1156 820h73M1152 853h72M1148 886h72M1143 919h73M1139 952h72M1135 985h72"/>
+    <path d="M413 730l48-29M434 760l48-29M455 790l48-29M476 820l48-29M497 850l48-29M518 880l48-29M539 910l48-29"/>
+  </g>
+
+  <!-- patios -->
+  <g fill="#d8cdb6" stroke="#b3a88f" stroke-width="1.5">
+    <path d="M308 405 L470 372 L488 432 L325 470 Z"/>
+    <path d="M470 372 L672 300 L690 380 L488 432 Z"/>
+    <path d="M672 300 L820 280 L832 345 L690 380 Z"/>
+    <path d="M800 682 L868 668 L915 872 L838 884 Z"/>
+    <path d="M600 812 L642 800 L672 932 L628 946 Z"/>
+  </g>
+
+  <!-- building -->
+  <g fill="#27312c" stroke="#f4efe6" stroke-width="3" stroke-linejoin="round">
+    <path d="M328 478 L790 398 L808 490 L345 545 Z"/>
+    <path d="M345 545 L548 522 L560 632 L378 652 Z"/>
+    <path d="M580 516 L808 490 L835 610 L600 668 Z"/>
+    <path d="M606 668 L790 628 L838 878 L668 932 Z"/>
+  </g>
+
+  <!-- site boundary -->
+  <path d="M185 250 L305 405 L520 355 L660 290 L865 268 L900 312 L970 356 L1300 372 L1445 385 L1375 490 L1380 900 L1300 1200 L1258 1350 M770 1350 L560 1090 L330 730 L160 440 L135 330 Z" fill="none" stroke="#b5812f" stroke-width="5" stroke-dasharray="16 10"/>
+
+  <!-- labels -->
+  <g fill="#f4efe6" font-size="24" font-weight="700" text-anchor="middle">
+    <text x="565" y="478" transform="rotate(-9 565 478)">MAIN BUILDING</text>
+    <text x="722" y="790" transform="rotate(78 722 790)">SOUTH WING</text>
+  </g>
+  <g fill="#27312c" font-size="22" text-anchor="middle">
+    <text x="1148" y="366" font-weight="700">Parking</text>
+    <text x="1290" y="850" font-weight="700" transform="rotate(-83 1290 850)">Parking</text>
+    <text x="450" y="860" font-weight="700" transform="rotate(55 450 860)">Parking</text>
+    <text x="398" y="420" font-size="18" transform="rotate(-12 398 420)">Patio</text>
+    <text x="580" y="372" font-size="18" transform="rotate(-18 580 372)">Patio</text>
+    <text x="752" y="322" font-size="18" transform="rotate(-8 752 322)">Patio</text>
+    <text x="858" y="782" font-size="18" transform="rotate(78 858 782)">Patio</text>
+    <text x="900" y="600" font-size="18" fill="#3f6f86">Brook</text>
+    <text x="640" y="1135" font-size="22" fill="#5d6a55" transform="rotate(52 640 1135)">Riding Head Lane</text>
+    <text x="1338" y="1010" font-size="22" fill="#5d6a55" transform="rotate(-84 1338 1010)">Riding Head Lane</text>
+    <text x="960" y="1000" font-size="22" fill="#5d6a55">Gardens and planting</text>
+  </g>
+
+  <!-- north arrow -->
+  <g transform="translate(1470 110)">
+    <circle r="44" fill="#fbf9f4" stroke="#27312c" stroke-width="2"/>
+    <path d="M0 -32 L12 14 L0 4 L-12 14 Z" fill="#27312c"/>
+    <text y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#27312c">N</text>
+  </g>
+
+  <!-- key -->
+  <g transform="translate(1180 1200)" font-size="20" fill="#27312c">
+    <rect x="-20" y="-34" width="380" height="150" fill="#fbf9f4" stroke="#cfc7b4"/>
+    <rect x="0" y="-12" width="34" height="20" fill="#27312c"/><text x="48" y="5">Building</text>
+    <rect x="0" y="24" width="34" height="20" fill="#f6f1e6" stroke="#8d8672" stroke-width="2"/><text x="48" y="41">Parking (35 bays)</text>
+    <path d="M0 80h34" stroke="#b5812f" stroke-width="5" stroke-dasharray="10 6"/><text x="48" y="87">Application site (approx.)</text>
+  </g>
+</svg>
