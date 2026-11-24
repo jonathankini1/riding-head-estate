@@ -139,6 +139,10 @@ tr.tot td{font-weight:600;color:var(--ink);border-bottom:0;border-top:1px solid 
 .card h3{font-size:31px;margin:8px 0 12px;color:var(--ink)}
 .card p{font-size:15.5px;margin:0}
 .cards.four{grid-template-columns:repeat(4,1fr)}
+.cards{grid-auto-rows:auto}
+.cards .card{display:grid;grid-template-rows:subgrid;grid-row:span 3;align-content:start;row-gap:0}
+.cards .card h3{align-self:start}
+.cards.four .card h3{font-size:26px}
 @media (max-width:980px){.cards.four{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:560px){.cards.four{grid-template-columns:1fr}}
 
@@ -407,7 +411,7 @@ footer b{color:rgba(255,255,255,.8);font-weight:500}
     <p class="eyebrow rv">Options for a buyer</p>
     <h2 class="h2 rv" style="max-width:15em">Three things a buyer could do with it.</h2>
     <div class="cards">
-      <div class="card rv"><i>One</i><h3>Build the apartments</h3><p>Build the eighteen apartments as a gated private community, to sell or to keep and rent out.</p></div>
+      <div class="card rv"><i>One</i><h3>Build the apartments</h3><p>Build the eighteen apartments as a gated private community, to sell or to keep and rent out. Planning is granted and the south wing is already part built.</p></div>
       <div class="card rv"><i>Two</i><h3>Reopen the restaurant</h3><p>The building was a restaurant and bar for 33 years, with wedding suites and a whisky shop added later. An earlier permission for ten guest bedrooms in the south wing was lawfully started. A buyer could reopen it as a restaurant with rooms, subject to the consents needed.</p></div>
       <div class="card rv"><i>Three</i><h3>Keep it private</h3><p>With the extra land and water, by separate negotiation, this could be a private estate fifteen miles from Manchester, as a home or a long-term hold, subject to planning.</p></div>
     </div>
@@ -438,10 +442,10 @@ footer b{color:rgba(255,255,255,.8);font-weight:500}
     <p class="eyebrow rv">Transport links</p>
     <h2 class="h2 rv" style="max-width:16em">Bus, tram, taxi, train and plane.</h2>
     <div class="cards four">
-      <div class="card rv"><i>Bus</i><h3>To Bury and Manchester</h3><p>Buses run from the A56, about three-quarters of a mile from the property, to Bury Interchange about every 30 minutes in the daytime. From Ramsbottom centre the 472 and 474 reach Bury in about 22 minutes, and the X41 Red Express runs direct to Manchester city centre.</p></div>
+      <div class="card rv"><i>Bus</i><h3>Bury and Manchester</h3><p>Buses run from the A56, about three-quarters of a mile from the property, to Bury Interchange about every 30 minutes in the daytime. From Ramsbottom centre the 472 and 474 reach Bury in about 22 minutes, and the X41 Red Express runs direct to Manchester city centre.</p></div>
       <div class="card rv"><i>Tram</i><h3>Metrolink from Bury</h3><p>Trams run from Bury Interchange, about 7 miles away, to Manchester Victoria in about 30 minutes and on to Piccadilly. Trams also run from Victoria to Manchester Airport.</p></div>
       <div class="card rv"><i>Taxi</i><h3>Door to door</h3><p>By taxi or car it is about 15 minutes to Bury Interchange, about 30 minutes to Manchester city centre and about 35 to 45 minutes to Manchester Airport, outside peak hours.</p></div>
-      <div class="card rv"><i>Rail and air</i><h3>Piccadilly and the airport</h3><p>Manchester Piccadilly has direct trains to London in a little over two hours and to Manchester Airport in about 15 to 20 minutes. The airport is 28 miles from the property by road.</p></div>
+      <div class="card rv"><i>Rail and air</i><h3>Piccadilly and airport</h3><p>Manchester Piccadilly has direct trains to London in a little over two hours and to Manchester Airport in about 15 to 20 minutes. The airport is 28 miles from the property by road.</p></div>
     </div>
     <p class="cap rv" style="margin-top:22px">Times are approximate. Check current timetables before travelling.</p>
   </div>
