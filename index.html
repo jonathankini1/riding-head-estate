@@ -145,8 +145,12 @@ tr.tot td{font-weight:600;color:var(--ink);border-bottom:0;border-top:1px solid 
 .times{margin-top:30px;border-top:1px solid var(--ink)}
 .times div{display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid var(--line)}
 .times b{font-family:var(--serif);font-weight:400;font-size:24px;color:var(--ink);white-space:nowrap}
-.map{min-height:460px;background:var(--paper-2);border:1px solid var(--line)}
-.map iframe{width:100%;height:100%;min-height:460px;border:0;filter:grayscale(.55) contrast(1.02)}
+.map{position:relative;min-height:460px;background:var(--paper-2);border:1px solid var(--line);overflow:hidden;cursor:pointer}
+.map iframe{position:absolute;inset:0;display:block;width:100%;height:100%;border:0;filter:grayscale(.55) contrast(1.02);pointer-events:none}
+.map.on{cursor:auto}
+.map.on iframe{pointer-events:auto}
+.map .hint{position:absolute;left:12px;bottom:12px;z-index:2;background:rgba(18,26,22,.86);color:#fff;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:8px 12px;pointer-events:none;transition:opacity .2s}
+.map.on .hint{opacity:0}
 
 /* terms */
 .terms{background:var(--ink-2);color:rgba(255,255,255,.84)}
@@ -417,7 +421,8 @@ footer b{color:rgba(255,255,255,.8);font-weight:500}
       </div>
       <p class="cap">Approximate road distances. Manchester city centre is about half an hour by car outside peak hours. Riding Head Lane, Shuttleworth, Ramsbottom BL0 0HH.</p>
     </div>
-    <div class="map rv">
+    <div class="map rv" id="map">
+      <span class="hint">Click or tap to move the map</span>
       <iframe title="Map showing The Fisherman's Retreat, Riding Head Lane, Ramsbottom" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-2.3500%2C53.6330%2C-2.2350%2C53.6780&amp;layer=mapnik&amp;marker=53.6554%2C-2.2904"></iframe>
     </div>
   </div>
@@ -476,6 +481,8 @@ footer b{color:rgba(255,255,255,.8);font-weight:500}
   var top=document.getElementById('top');
   function onScroll(){top.classList.toggle('solid',window.scrollY>60)}
   onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+  var map=document.getElementById('map');
+  if(map){map.addEventListener('click',function(){map.classList.add('on')});map.addEventListener('mouseleave',function(){map.classList.remove('on')});document.addEventListener('touchstart',function(e){if(!map.contains(e.target))map.classList.remove('on')},{passive:true})}
   var els=document.querySelectorAll('.rv');
   if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
