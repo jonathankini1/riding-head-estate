@@ -126,7 +126,7 @@ tr.tot td{font-weight:600;color:var(--ink);border-bottom:0;border-top:1px solid 
 .g2{grid-column:span 5}.g2 img{aspect-ratio:1/1}
 .g3{grid-column:span 5}.g3 img{aspect-ratio:1/1;object-position:50% 30%}
 .g4{grid-column:span 7}.g4 img{aspect-ratio:7/5}
-.archive{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px;align-items:start}
+.archive{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px;align-items:stretch}
 .archive figure{margin:0;background:var(--paper-2);padding:14px}
 .archive img{width:100%;aspect-ratio:4/3;object-fit:cover}
 
@@ -199,8 +199,7 @@ footer b{color:rgba(255,255,255,.8);font-weight:500}
   .hero img{object-position:78% 40%}
   .hero::after{background:linear-gradient(180deg,rgba(12,18,15,.6) 0%,rgba(12,18,15,.1) 20%,rgba(12,18,15,.5) 46%,rgba(12,18,15,.93) 100%)}
   .price{margin:8px 0 0;flex-basis:100%}
-  .archive{grid-template-columns:1fr 1fr}
-  .archive figure:last-child{grid-column:span 2}
+  .archive{grid-template-columns:1fr}
   table{font-size:14px}
   dl div{grid-template-columns:1fr;gap:4px}
   .hide-s{display:none}
