@@ -136,6 +136,9 @@ tr.tot td{font-weight:600;color:var(--ink);border-bottom:0;border-top:1px solid 
 .card i{font-family:var(--serif);font-size:20px;color:var(--amber);font-style:italic}
 .card h3{font-size:31px;margin:8px 0 12px;color:var(--ink)}
 .card p{font-size:15.5px;margin:0}
+.cards.four{grid-template-columns:repeat(4,1fr)}
+@media (max-width:980px){.cards.four{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.cards.four{grid-template-columns:1fr}}
 
 /* location */
 .loc{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,84px);align-items:stretch}
@@ -194,6 +197,7 @@ footer b{color:rgba(255,255,255,.8);font-weight:500}
   table{font-size:14px}
   dl div{grid-template-columns:1fr;gap:4px}
   .hide-s{display:none}
+  .contact a.mail{font-size:18px}
 }
 </style>
 </head>
@@ -401,6 +405,17 @@ footer b{color:rgba(255,255,255,.8);font-weight:500}
       <iframe title="Map showing The Fisherman's Retreat, Riding Head Lane, Ramsbottom" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-2.3500%2C53.6330%2C-2.2350%2C53.6780&amp;layer=mapnik&amp;marker=53.6554%2C-2.2904"></iframe>
     </div>
   </div>
+  <div class="wrap" style="margin-top:clamp(56px,7vw,96px)" id="transport">
+    <p class="eyebrow rv">Transport links</p>
+    <h2 class="h2 rv" style="max-width:16em">Bus, tram, taxi, train and plane.</h2>
+    <div class="cards four">
+      <div class="card rv"><i>Bus</i><h3>To Bury and Manchester</h3><p>Buses run from the A56, about three-quarters of a mile from the property, to Bury Interchange about every 30 minutes in the daytime. From Ramsbottom centre the 472 and 474 reach Bury in about 22 minutes, and the X41 Red Express runs direct to Manchester city centre.</p></div>
+      <div class="card rv"><i>Tram</i><h3>Metrolink from Bury</h3><p>Trams run from Bury Interchange, about 7 miles away, to Manchester Victoria in about 30 minutes and on to Piccadilly. Trams also run from Victoria to Manchester Airport.</p></div>
+      <div class="card rv"><i>Taxi</i><h3>Door to door</h3><p>By taxi or car it is about 15 minutes to Bury Interchange, about 30 minutes to Manchester city centre and about 35 to 45 minutes to Manchester Airport, outside peak hours.</p></div>
+      <div class="card rv"><i>Rail and air</i><h3>Piccadilly and the airport</h3><p>Manchester Piccadilly has direct trains to London in a little over two hours and to Manchester Airport in about 15 to 20 minutes. The airport is 28 miles from the property by road.</p></div>
+    </div>
+    <p class="cap rv" style="margin-top:22px">Times are approximate. Check current timetables before travelling.</p>
+  </div>
 </section>
 
 <section class="terms" id="terms">
@@ -420,9 +435,9 @@ footer b{color:rgba(255,255,255,.8);font-weight:500}
     <div class="contact rv" id="enquire">
       <p class="eyebrow">Enquiries in confidence</p>
       <h3>Ask for the information pack or book a viewing.</h3>
-      <p>The pack has the planning drawings, the decision notice and the title information. To get it, email James.</p>
-      <a class="mail" href="mailto:james@fishermansretreat.com?subject=The%20Fisherman%27s%20Retreat%20Estate%20%E2%80%93%20private%20enquiry">james@fishermansretreat.com</a>
-      <div><a class="btn" href="mailto:james@fishermansretreat.com?subject=The%20Fisherman%27s%20Retreat%20Estate%20%E2%80%93%20private%20enquiry&amp;body=Please%20send%20the%20information%20pack%20for%20The%20Fisherman%27s%20Retreat%20Estate.%0A%0AName%3A%0ATelephone%3A%0A">Email James</a></div>
+      <p>The pack has the planning drawings, the decision notice and the title information. To get it, email Jonathan Kini.</p>
+      <a class="mail" href="mailto:jonathan.kini@sjkconsulting.co.uk?subject=The%20Fisherman%27s%20Retreat%20Estate%20%E2%80%93%20private%20enquiry">jonathan.kini@sjkconsulting.co.uk</a>
+      <div><a class="btn" href="mailto:jonathan.kini@sjkconsulting.co.uk?subject=The%20Fisherman%27s%20Retreat%20Estate%20%E2%80%93%20private%20enquiry&amp;body=Please%20send%20the%20information%20pack%20for%20The%20Fisherman%27s%20Retreat%20Estate.%0A%0AName%3A%0ATelephone%3A%0A">Email Jonathan</a></div>
     </div>
   </div>
 </section>
